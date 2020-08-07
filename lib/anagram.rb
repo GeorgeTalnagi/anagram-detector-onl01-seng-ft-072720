@@ -7,7 +7,7 @@ attr_accessor :word
 
   def match(words)
     anagrams = []
-    words.collect do |new_word|
+    words.each do |new_word|
       if @word.split().sort == new_word.split().sort 
         anagrams << new_word 
       end
