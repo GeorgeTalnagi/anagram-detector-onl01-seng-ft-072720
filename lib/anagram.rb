@@ -9,6 +9,7 @@ attr_accessor :word
     anagrams = []
     words.collect do |new_word|
       if @word.split().sort == new_word.split().sort 
+        anagrams << new_word 
       word
       end
     end 
