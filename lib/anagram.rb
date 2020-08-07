@@ -5,9 +5,9 @@ def initialize(words)
   @words = words 
   end
 
-def match(words) 
+def match 
   anagrams = []
-  words.collect do |new_word|
+  @words.collect do |new_word|
       %w(word).to_s.split 
       words
     end 
