@@ -7,7 +7,7 @@ def initialize(name)
 
 def match(name) 
   name.collect do |words|
-      %w(name)
+      %w(name).to_s
       name
     end 
   end 
