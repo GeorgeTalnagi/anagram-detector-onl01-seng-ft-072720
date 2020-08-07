@@ -1,16 +1,16 @@
 class Anagram
-attr_accessor :words
+attr_accessor :word
 
-def initialize(words)
-  @words = words 
+def initialize(word)
+  @word = word
   end
 
 def match 
   anagrams = []
-  @words.collect do |new_word|
+  @word.collect do |new_word|
       %w(word).to_s.split 
-      words
-    end 
+      word
+    end
   end 
 
 
