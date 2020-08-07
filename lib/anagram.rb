@@ -1,14 +1,14 @@
 class Anagram
-attr_accessor :name
+attr_accessor :names
 
-def initialize(name)
-  @name = name 
+def initialize(names)
+  @names = names 
   end
 
-def match(name) 
-  name.collect do |words|
-      %w(name).to_s.split 
-      name
+def match(names) 
+  names.collect do |word|
+      %w(names).to_s.split 
+      names
     end 
   end 
 
