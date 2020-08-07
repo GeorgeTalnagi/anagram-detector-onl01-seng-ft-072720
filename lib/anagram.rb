@@ -6,12 +6,12 @@ attr_accessor :word
   end
 
   def match(words)
-  anagrams = []
-  words.collect do |new_word|
-   if @word.split().sort == new_word.split().sort 
+    anagrams = []
+    words.collect do |new_word|
+      if @word.split().sort == new_word.split().sort 
       word
-    end
-  end 
+      end
+   end 
 end 
 
 end 
