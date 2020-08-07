@@ -1,4 +1,4 @@
-requires "pry"
+require 'pry'
 class Anagram
 attr_accessor :word
 
@@ -8,6 +8,7 @@ attr_accessor :word
 
   def match(words)
     anagrams = []
+    binding.pry
     words.each do |new_word|
       if @word.split().sort == new_word.split().sort 
         anagrams << new_word 
