@@ -8,7 +8,7 @@ def initialize(words)
 def match(words) 
   anagrams = []
   words.collect do |new_word|
-      %w(words).to_s.split 
+      %w(word).to_s.split 
       words
     end 
   end 
