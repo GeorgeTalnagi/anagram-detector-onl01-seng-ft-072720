@@ -1,17 +1,17 @@
 class Anagram
 attr_accessor :word
 
-def initialize(word)
-  @word = word
+  def initialize(word)
+    @word = word
   end
 
-def match(words)
+  def match(words)
   anagrams = []
-  @word.collect do |new_word|
-      %w(word).to_s.split 
+  words.collect do |new_word|
+   if @word.split().sort == new_word.split().sort 
       word
     end
   end 
-
+end 
 
 end 
