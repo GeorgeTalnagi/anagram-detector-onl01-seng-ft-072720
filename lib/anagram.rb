@@ -8,7 +8,7 @@ def initialize(name)
 def match(name) 
   name.collect do |words|
       %w(name)
-      name 
+      name.flatten
     end 
   end 
 
