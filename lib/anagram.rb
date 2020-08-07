@@ -11,7 +11,7 @@ attr_accessor :word
       if @word.split().sort == new_word.split().sort 
       word
       end
-   end 
-end 
+    end 
+  end 
 
 end 
